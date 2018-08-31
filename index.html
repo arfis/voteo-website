@@ -8,7 +8,8 @@
 			<link rel="stylesheet" href="assets/slick/slick-theme.css"/>
 			<link rel="stylesheet" href="assets/progress/css/asProgress.css">
 			<link rel="stylesheet" href="assets/css/main.css" />
-
+			<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 						<script src="assets/progress/jquery-asProgress.js"></script>
 			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -77,7 +78,7 @@
 			font-weight: bold;
 			font-size: 2rem;
 			padding-bottom: 2vw;
-			font-family: Lucida Sans Typewriter,Lucida Console,monaco,Bitstream Vera Sans Mono,monospace;
+			font-family:'Montserrat';
 			color: gray;
 			opacity: 0.8;
 		}
@@ -245,23 +246,38 @@
 		margin-right: auto;
 	}
 
-	button.slick-next{
-		left: 101%;
-		width: 50px;
-		height: 50px;
-	}
-	button.slick-prev{
-		z-index: 1;
-		left: -5%;
-		width: 50px;
-		height: 50px;
-	}
 
 	 .slick-next::before, .slick-prev::before{
-		 font-size: 50px;
-	   opacity: .75;
-	   color: #E0AC26 !important;
+	   color: black;
 	}
+
+	.voteo-splash{
+		font-size: 10vw;
+		color: white;
+		font-weight: 700;
+		margin: 10vh;
+		font-family: 'Montserrat';
+	}
+
+	.slick-dots {
+		top: 101.5%;
+	}
+
+	.slick-dots li button{
+	    /* more CSS */
+
+
+	}
+
+	.slick-dots li button::before {
+    font-size: 1vw;
+		/* more CSS */
+	}
+
+	.icon-custom {
+		font-size: 5vw;
+	}
+
 	 </style>
 		<body class="is-preload">
 
@@ -282,11 +298,12 @@
 			<!-- Header -->
 				<section id="header">
 					<div class="inner">
-						<img id="main-logo" src="images/voteo-text-only.png" width="30%" height="30%">
-						<h2>Decentralized voting platform built on <strong>nOS</strong> and <strong>NEO<strong></h2>
+						<div class="voteo-splash">Voteo</div>
+						<!--<img id="main-logo" src="images/voteo-text-only.png" width="30%" height="30%">-->
+						<h3>Decentralized voting platform built on <strong>nOS</strong> and <strong>NEO<strong></h3>
 						<br>
 						<h1>
-	  <a href="#" id="typewrite" class="typewrite" data-period="2000" data-type='[ "Decentralized polls.", "Questionnaires and quizzes.", "Elections on blockchain.", "Digital Identities." ]'>
+	  <a href="#" id="typewrite" class="typewrite" data-period="2000" data-type='[ "Decentralized Polls.", "Digital Identities.", "Elections on Blockchain.", "Targeted Surveys." ]'>
 	    <span class="wrap"></span>
 	  </a>
 	</h1><br>
@@ -301,19 +318,19 @@
 				<section id="section-alpha" class="main style1 special">
 					<div class="container">
 						<header class="major">
-							<h2>Try alpha version still today, vote and create polls on nOS platform.</h2>
+							<h3>Try alpha version still today, vote and create polls on nOS platform.</h3>
 						</header>
 
 	<div class="carousel">
-	  <div class="carousel-item"><img src="images/voteo-screen1.png" width="90%" height="auto"></div>
-		<div class="carousel-item"><img src="images/voteo-screen2.png" width="90%" height="auto"></div>
-		<div class="carousel-item"><img src="images/voteo-screen3.png" width="90%" height="auto"></div>
-		<div class="carousel-item"><img src="images/voteo-screen4.png" width="90%" height="auto"></div>
-		<div class="carousel-item"><img src="images/voteo-screen5.png" width="90%" height="auto"></div>
+	  <div class="carousel-item"><img src="images/voteo-screen1.png" width="80%" height="auto"></div>
+		<div class="carousel-item"><img src="images/voteo-screen2.png" width="80%" height="auto"></div>
+		<div class="carousel-item"><img src="images/voteo-screen3.png" width="80%" height="auto"></div>
+		<div class="carousel-item"><img src="images/voteo-screen4.png" width="80%" height="auto"></div>
+		<div class="carousel-item"><img src="images/voteo-screen5.png" width="80%" height="auto"></div>
 	</div><br>
 	<ul class="actions special">
-		<li><a href="https://github.com/SkyRoW/skyrow.github.io/tree/master/voteo" target="_blank" class="button wide primary">Github</a></li>
-		<li><a href="https://github.com/nos/client" class="button wide primary" target="_blank">nOS Client</a></li>
+		<li><a href="https://github.com/SkyRoW/skyrow.github.io/tree/master/voteo" target="_blank" class="button wide primary blue">Github</a></li>
+		<li><a href="https://github.com/nos/client" class="button wide primary blue" target="_blank">nOS Client</a></li>
 	</ul>
 
 
@@ -326,47 +343,47 @@
 						<div class="row gtr-150">
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style1 major fa-code"></span></li>
+									<li><span class="icon-custom fas fa-poll"></span></li>
 									</ul>
-									<h3>Public and Private polls</h3>
+									<h4>Public & Private Polls</h4>
 									<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							</div>
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style2 major fa-bolt"></span></li>
+									<li><span class="icon-custom fas fa-envelope-open-text"></span></li>
 									</ul>
-								<h3>NEO Ecosystem voting</h3>
+								<h4>Transparent Electoral Voting</h4>
 								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							</div>
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style3 major fa-camera-retro"></span></li>
+									<li><span class="icon-custom fas fa-bullseye"></span></li>
 									</ul>
-								<h3>Powered by VTO tokens</h3>
+								<h4>Targeted Surveys</h4>
 								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							</div>
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style4 major fa-cog"></span></li>
+									<li><span class="icon-custom fab fa-superpowers"></span></li>
 									</ul>
-									<h3>Government compliant</h3>
+									<h4>Powered by VTO Tokens</h4>
 									<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							</div>
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style5 major fa-desktop"></span></li>
+									<li><span class="icon-custom fas fa-id-card"></span></li>
 									</ul>
-									<h3>Trusted Digital Identities</h3>
+									<h4>Trusted Digital Identities</h4>
 									<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 								</div>
 							<div class="col-4 col-12-medium">
 								<ul class="major-icons">
-									<li><span class="icon style6 major fa-calendar"></span></li>
+									<li><span class="icon-custom fas fa-gift"></span></li>
 								</ul>
-								<h3>Rewarding voting system</h3>
+								<h4>Rewards & Incentive system</h4>
 								<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							</div>
-						</div>
+
 					</div>
 				</section>
 
@@ -495,7 +512,7 @@
 										<h2>Our Team</h2>
 									</header><br>
 
-									<div class="row gtr-150">
+									<div class="row gtr-150" style="transform: scale(0.9);">
 										<div class="col-3 col-12-medium team-member">
 											<span class="team-member image fit"><img src="images/lukas.jpg" alt=""/></span>
 											<h3>Lukas Cader</h3>
@@ -563,7 +580,7 @@
 				</section>
 
 				<!-- Five -->
-				<!--
+
 					<section id="five" class="main style1">
 						<div class="container">
 							<header class="major special">
@@ -878,7 +895,7 @@
 
 						</div>
 					</section>
--->
+
 
 
 			<!-- Scripts -->
@@ -1029,13 +1046,13 @@
 			function computeColor(hue) {
 				var color = "rgba(255,255,255,1)";
 
-				var color1R = 136;
-				var color1G = 211;
-				var color1B = 206;
+				var color1R = 37;
+				var color1G = 117;
+				var color1B = 252;
 
-				var color2R = 110;
-				var color2G = 69;
-				var color2B = 226;
+				var color2R = 106;
+				var color2G = 17;
+				var color2B = 203;
 
 				var colorNewR,colorNewG,colorNewB;
 
@@ -1127,6 +1144,7 @@
 						$('.carousel').slick({
 						  centerMode: false,
 							dots: true,
+							arrows: false,
 						  centerPadding: '60px',
 						  slidesToShow: 1,
 						  responsive: [
@@ -1134,7 +1152,7 @@
 						      breakpoint: 768,
 						      settings: {
 						        arrows: false,
-										dots: false,
+										dots: true,
 						        centerMode: false,
 						        centerPadding: '0px',
 						        slidesToShow: 1
@@ -1144,7 +1162,7 @@
 						      breakpoint: 480,
 						      settings: {
 						        arrows: false,
-										dots: false,
+										dots: true,
 						        centerMode: false,
 						        centerPadding: '0px',
 						        slidesToShow: 1
