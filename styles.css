@@ -1,0 +1,260 @@
+.expand {
+    cursor: pointer;
+}
+
+/* #e1ab05  - gold
+#09245d - blue
+*/
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(9, 36, 93, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 0 rgba(9, 36, 93, 0.7);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(9, 36, 93, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(9, 36, 93, 0.4);
+        box-shadow: 0 0 0 0 rgba(9, 36, 93, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba(9, 36, 93, 0);
+        box-shadow: 0 0 0 30px rgba(9, 36, 93, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(9, 36, 93, 0);
+        box-shadow: 0 0 0 0 rgba(9, 36, 93, 0);
+    }
+}
+
+.bt-logo {
+    background-color: #ffffff33;
+    border-radius: 46px;
+    padding: 25px;
+}
+
+.team-member {
+    margin: 0 0 10px 0;
+}
+
+.team-member img {
+    opacity: 0.9;
+    padding: 5px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(9, 36, 93, 0.5);
+}
+
+.team-member img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background: #e1ab05;
+    animation: pulse 0.8s ease-out;
+}
+
+.team-member h3 {
+    margin: 0 0 0 0;
+}
+
+.team-member .fa-linkedin {
+    color: #e1ab05;
+}
+
+.update {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2vw;
+    font-family: 'Montserrat';
+    color: gray;
+    opacity: 0.8;
+}
+
+.update:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .update {
+        font-size: 1rem;
+    }
+}
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+
+
+.progress-title {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+@media (max-width: 768px) {
+    .progress-title {
+        font-size: 0.7rem;
+    }
+}
+
+.progress {
+    height: 10px;
+    background: #e9e9ea;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress:before,
+.progress:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 1;
+}
+
+.progress:after {
+    border: 7px solid #e9e9ea;
+    left: auto;
+    right: 0;
+}
+
+.progress .progress-bar {
+    box-shadow: none;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+
+    -webkit-animation: animate-positive 1s;
+    -moz-animation: animate-positive 1s;
+    -o-animation: animate-positive 1s;
+    animation: animate-positive 1s;
+}
+
+.progress-value {
+    margin-left: 20px;
+}
+
+.progress .progress-value {
+    margin-right: -50px;
+    width: 70px;
+    height: 35px;
+    line-height: 27px;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    z-index: 2;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+input[type="email"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: rgba(144, 144, 144, 0.075);
+    border-radius: 4px;
+    border: none;
+    border: solid 1px white;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="email"]:focus {
+    border-color: #e1ab05;
+}
+
+.subscribe {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.slick-next::before, .slick-prev::before {
+    color: black;
+}
+
+.voteo-splash {
+    font-size: 10vw;
+    color: white;
+    font-weight: 700;
+    margin: 10vh;
+    font-family: 'Montserrat';
+}
+
+.slick-dots {
+    top: 101.5%;
+}
+
+.slick-dots li button {
+    /* more CSS */
+
+
+}
+
+.slick-dots li button::before {
+    font-size: 1vw;
+    /* more CSS */
+}
+
+.icon-custom {
+    font-size: 5vw;
+}
